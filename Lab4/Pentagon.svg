@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+
+    <defs>
+        <g id="pentagon">
+            <polygon points="50,5 95,40 75,90 25,90 5,40" transform-origin="50 50">
+                <animateTransform attributeName="transform" 
+                                  attributeType="XML" 
+                                  type="rotate" 
+                                  from="0" 
+                                  to="360" 
+                                  dur="7s" 
+                                  repeatCount="indefinite"/>
+            </polygon>
+        </g>
+    </defs>
+
+    <g transform="translate(60, 60) scale(0.7)">
+        <g transform-origin="100 100">
+            <use href="#pentagon" transform="translate(-35,0)" fill="pink"/>
+            <use href="#pentagon" transform="translate(140,80)" fill="pink"/>
+            <rect x="30" y="30" width="200" height="20" fill="red" transform="rotate(25)"/>
+        </g>
+        <polygon points="25,75 50,25 75,75" fill="purple" transform="scale(1.5,3) translate(13,5)"/>
+    </g>
+
+    <g transform="translate(380, 90) scale(0.5)">
+        <g transform-origin="100 100">
+            <use href="#pentagon" transform="translate(-35,0)" fill="orange"/>
+            <use href="#pentagon" transform="translate(140,80)" fill="orange"/>
+            <rect x="30" y="30" width="200" height="20" fill="red" transform="rotate(25)"/>
+        </g>
+        <polygon points="25,75 50,25 75,75" fill="green" transform="scale(1.5,3) translate(13,5)"/>
+    </g>
+    
+    <g transform="translate(220, 260) scale(0.8)">
+        <g transform-origin="100 100">
+            <use href="#pentagon" transform="translate(-35,0)" fill="brown"/>
+            <use href="#pentagon" transform="translate(140,80)" fill="brown"/>
+            <rect x="30" y="30" width="200" height="20" fill="red" transform="rotate(25)"/>
+        </g>
+        <polygon points="25,75 50,25 75,75" fill="blue" transform="scale(1.5,3) translate(13,5)"/>
+    </g>
+
+    
+</svg>
